@@ -1,0 +1,100 @@
+.create-acc-text {
+    font-size: 13px;
+}
+
+.navbar {
+    height: 5em;
+}
+
+.bi-book:before {
+    font-size: 50px;
+}
+
+
+/* admin styles ------------------------------------------------------------ */
+
+
+/* dashboard styles */
+.card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-top {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Ensure main content doesn't get hidden under sidebar */
+@media (min-width: 768px) {
+    body {
+        min-height: 100vh;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0 !important;
+    }
+}
+/* ---------------------------------------- */
+
+/* sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    margin: 0.2rem 1rem;
+    transition: all 0.3s;
+}
+
+.nav-link:hover:not(.active) {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white !important;
+}
+
+.nav-link.active {
+    background-color: #0d6efd;
+    color: white;
+}
+/* ------------------------------------- */
+
+/* ----------------edit_book----------------- */
+
+.main-content {
+    margin-left: 250px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+        padding: 20px;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+}
